@@ -1,0 +1,68 @@
+.page-footer {
+  min-width: 1200px;
+  background-color: $backgroundColor;
+  &__section {
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+  }
+
+  &__address {
+    color: $whiteColor;
+    letter-spacing: 0.03em;
+
+    font-weight: 500;
+    font-size: 14;
+    line-height: 1.17;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+  }
+
+  &__contact {
+    color: $contactFooterColor;
+    font-size: 14;
+    line-height: 1.17;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+  }
+  &__text {
+    font-weight: 700;
+    font-size: 14;
+    line-height: 1.17;
+    color: $whiteColor;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__link {
+    display: flex;
+    padding-left: 70px;
+    padding-top: 20px;
+  }
+  &__link > li:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__icon {
+    width: 44px;
+    height: 44px;
+    background-color: $linkFooterColor;
+    border-radius: 50%;
+    fill: $whiteColor;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: background-color;
+    transition-duration: $defaultTransformDuration;
+    transition-timing-function: $transitionTimingFunction;
+  }
+  &__icon:hover,
+  &__icon:focus {
+    background-color: $blueColor;
+  }
+  &__adr {
+    padding-bottom: 10px;
+  }
+}

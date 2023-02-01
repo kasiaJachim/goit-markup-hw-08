@@ -1,0 +1,23 @@
+.logo {
+  color: $blackColor;
+  font-family: "Raleway", sans-serif;
+  font-size: 26;
+  line-height: 1.38;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  padding-left: 40px;
+  font-weight: 700;
+  &__half {
+    color: $blueColor;
+    font-weight: 700;
+    font-size: 26;
+    line-height: 1.17;
+  }
+  &__footer {
+    display: block;
+    color: $whiteColor;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    font-weight: 700;
+  }
+}

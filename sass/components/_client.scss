@@ -1,0 +1,40 @@
+.client {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  flex-basis: calc((100% - 60px) / 3);
+  max-width: 1200px;
+
+  &__title {
+    color: $secondaryBlackColor;
+    font-weight: 700;
+    font-size: 36;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+
+  &__part {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    gap: 30px;
+  }
+  &__logo {
+    border: solid 1px $clientLogoColor;
+    border-radius: 4px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    fill: $clientLogoColor;
+    transition-property: fill;
+    transition-duration: $defaultTransformDuration;
+    transition-timing-function: $transitionTimingFunction;
+  }
+  &__logo:hover,
+  &__logo:focus {
+    fill: $blueColor;
+    cursor: pointer;
+    border: solid 1px $blueColor;
+  }
+}

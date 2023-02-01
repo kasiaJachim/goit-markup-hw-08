@@ -1,0 +1,79 @@
+.team {
+  background-color: $teamCardColor;
+  max-width: 1200px;
+  justify-content: center;
+  padding-bottom: 94px;
+  padding-top: 94px;
+  align-items: center;
+
+  &__title {
+    color: $secondaryBlackColor;
+    font-weight: 700;
+    font-size: 36;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+
+  &__part {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+  }
+  &__box {
+    background-color: $whiteColor;
+    min-width: 270px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 0px 0px 4px 4px;
+  }
+  &__part > &__box:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__name {
+    color: $secondaryBlackColor;
+    font-weight: 500;
+    font-size: 16;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin: auto;
+    padding-top: 30px;
+  }
+
+  &__description {
+    font-size: 16;
+    line-height: 1.17;
+    text-align: center;
+    margin: auto;
+    padding-top: 10px;
+  }
+  &__media {
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 30px;
+  }
+
+  &__icon {
+    fill: $clientLogoColor;
+    padding: 12px;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    background-color: $whiteColor;
+    transition-property: background-color, fill;
+    transition-duration: $defaultTransformDuration;
+    transition-timing-function: $transitionTimingFunction;
+  }
+  &__icon:hover,
+  &__icon:focus {
+    background-color: $blueColor;
+    fill: $whiteColor;
+  }
+}
+
