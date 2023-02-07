@@ -1,10 +1,15 @@
 .team {
   background-color: $teamCardColor;
-  max-width: 1200px;
-  justify-content: center;
   padding-bottom: 94px;
   padding-top: 94px;
-  align-items: center;
+ 
+
+ &__part{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+ }
 
   &__title {
     color: $secondaryBlackColor;
@@ -17,19 +22,11 @@
     margin-bottom: 50px;
   }
 
-  &__part {
-    display: flex;
-    padding: 0;
-    justify-content: center;
-  }
   &__box {
     background-color: $whiteColor;
     min-width: 270px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
     border-radius: 0px 0px 4px 4px;
-  }
-  &__part > &__box:not(:last-child) {
-    margin-right: 30px;
   }
 
   &__name {
@@ -58,7 +55,7 @@
 
   &__icon {
     fill: $clientLogoColor;
-    padding: 12px;
+    padding: 20px;
     border-radius: 50%;
     width: 44px;
     height: 44px;
@@ -76,4 +73,3 @@
     fill: $whiteColor;
   }
 }
-

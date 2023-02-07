@@ -1,5 +1,7 @@
 @import "./utils/vars";
 @import "./utils/globals";
+@import "./utils/mixins";
+@import "./components/menu-mobil";
 @import "./components/btn-section";
 @import "./components/card";
 @import "./components/client";
@@ -12,3 +14,4 @@
 @import "./components/signup";
 @import "./components/team";
 @import "./components/logo";
+

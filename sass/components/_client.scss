@@ -20,6 +20,7 @@
     padding: 0;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
   }
   &__logo {
     border: solid 1px $clientLogoColor;

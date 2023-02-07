@@ -8,7 +8,8 @@ a {
   transition-timing-function: $transitionTimingFunction;
 }
 a:hover,
-a:focus {
+a:focus
+ {
   color: $blueColor;
 }
 button {
@@ -24,15 +25,44 @@ button:focus {
 }
 ul {
   margin: 0;
+  padding: 0;
 }
 
 li {
   list-style: none;
+  text-decoration: none;
+}
+h5{
+  margin: 0;
+}
+p{
+  margin: 0;
 }
 
 .container {
-  max-width: 1200px;
-  padding-top: 84px;
-  padding-bottom: 68px;
-}
 
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0 15px;
+    @include tablet {
+        max-width: 768px;
+    }
+    @include desktop {
+        max-width: 1200px;
+    }
+
+  
+}
+ a{
+  text-decoration: none;
+}
+/*svg{
+  transition-property: fill;
+  transition-duration: $defaultTransformDuration;
+  transition-timing-function: $transitionTimingFunction;
+}
+ svg:focus,
+ svg:hover{
+  fill: $blueColor;
+ }*/

@@ -1,34 +1,56 @@
 .card {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  &__item {
-    padding: 10px;
-    flex-basis: calc((100% - 90px) / 4);
 
-    &__item > p:not(:last-child) {
-      margin-right: 30px;
-    }
+  padding-top: 84px;
+  padding-bottom: 68px;
+   width:450px;
+   @include tablet {
+    width: 354px;
+}
+@include desktop {
+    width: 270px;
+}
+&__item{
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+
+}
     & > h5 {
+      text-align: center;
       color: $secondaryBlackColor;
       font-weight: 700;
       font-size: 14;
       line-height: 1.17;
       letter-spacing: 0.03em;
       text-transform: uppercase;
+     
+      @include tablet{
+        text-align: left;
+      }
     }
-    & > p {
-      font-size: 14;
-      line-height: 1.71;
-      letter-spacing: 0.03em;
-    }
+    
+  }
+  &__description {
+    display: flex;
+    margin: 0;
+    font-size: 14;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  flex-wrap: wrap;
   }
   &__icon {
     border-radius: 4px;
     fill: $secondaryBlackColor;
     background-color: $teamCardColor;
-    padding-top: 25px;
-    padding-bottom: 25px;
+   height: 120px;
+   padding-top: 25px;
+   padding-bottom: 25px;
+   
+   @include tablet{
+width: 354px;
+   }
+   @include desktop{
+    width: 270px;
+   }
   }
-}
- 
+

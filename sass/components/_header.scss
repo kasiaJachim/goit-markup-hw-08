@@ -1,18 +1,41 @@
 .header {
   margin: 0px;
   display: flex;
-  border: 1px solid $headerBorderColor;
-  min-width: 1200px;
+  border-bottom: 1px solid $headerBorderColor;
   padding-top: 32px;
   padding-bottom: 32px;
   justify-content: flex-start;
   align-items: center;
+  text-decoration: none;
+  &__part {
+     
+    text-decoration: none;
+    fill: $greyColor;
+    transition-property: fill;
+    transition-duration: $defaultTransformDuration;
+    transition-timing-function: $transitionTimingFunction;
+  
+  }
+
+  &__part:hover,
+  &__part:focus {
+    fill: $blueColor;
+  }
 
   &__nav {
-    display: flex;
-    margin: 0;
-    padding-left: 93px;
-    padding-right: 350px;
+    display: none;
+    @include tablet {
+      display: flex;
+      margin: 0;
+      gap: 50px;
+      padding-right: 55px;
+    }
+    @include desktop {
+      display: flex;
+      margin: 0;
+      padding-left: 93px;
+      padding-right: 190px;
+    }
   }
   &__nav > li:not(:last-child) {
     margin-right: 30px;
@@ -35,42 +58,45 @@
   }
 
   &__item {
-    display: flex;
-    justify-content: flex-end;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0;
-  }
-  &__item > li:not(:last-child) {
-    margin-right: 30px;
-  }
+    display: none;
+    @include tablet {
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 0;
+    }
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      gap: 30px;
+    }
+    &__item > li:not(:last-child) {
+      margin-right: 30px;
+    }
+    
 
-  &__icon {
-    text-decoration: none;
-    fill: $greyColor;
-    transition-property: fill;
-    transition-duration: $defaultTransformDuration;
-    transition-timing-function: $transitionTimingFunction;
-  }
+   
 
-  &__icon:hover,
-  &__icon:focus {
-    fill: $blueColor;
-  }
-  &--active {
-    position: relative;
-    color: $blueColor;
-  }
+    &--active {
+      position: relative;
+      color: $blueColor;
+    }
 
-  &--active::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-color: $blueColor;
-    border-radius: 2px;
-    margin: 0;
-    top: 51px;
+    &--active::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 4px;
+      background-color: $blueColor;
+      border-radius: 2px;
+      margin: 0;
+      top: 51px;
+    }
   }
 }
