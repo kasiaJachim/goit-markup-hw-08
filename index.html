@@ -31,7 +31,7 @@
           <li>
             <a class="header__link" href="./portfolio.html">Portfolio</a>
           </li>
-          <li><a class="header__link" href="#">Kontakt</a></li>
+          <li><a class="header__link" href="#kontant">Kontakt</a></li>
         </ul>
         <ul class="header__item">
           <li class="header__part">
@@ -55,14 +55,16 @@
             >
           </li>
         </ul>
+        <button
+          class="menu__toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile__menu-hamburger" width="24" height="16">
+           <use href="./images/icons.svg#icon-menu_24px"></use>
+          </svg>
+        </button>
       </div>
-      <button
-        class="menu__toggle js-open-menu" aria-expanded="false"
-        aria-controls="mobile-menu">
-        <svg class="mobile__menu-hamburger" width="40" height="40">
-          <use href="./images/icons.svg#icon-menu_40px"></use>
-        </svg>
-      </button>
     </header>
     <main>
       <div class="main-background">
@@ -70,7 +72,7 @@
           <h1 class="main-background__title">
             EFEKTYWNE ROZWIĄZANIA <br />DLA WASZEGO BIZNESU
           </h1>
-          <button class="main-background__btn" type="button" data-modal-open>
+          <button class="main-background__btn btn" type="button" data-modal-open>
             Zamów usługę
           </button>
         </section>
@@ -167,32 +169,26 @@
           <li class="team__box">
             <picture>
               <source
-                  media="screen and (max-width: 768px)"
-                  srcset="
-                      images/worker1-mob-1x.jpg,
-                      images/worker1-mob-2x.jpg 2x
-                  "
+                media="screen and (max-width: 768px)"
+                srcset="images/worker1-mob-1x.jpg, images/worker1-mob-2x.jpg 2x"
               />
               <source
-                  media="screen and (max-width: 1200px)"
-                  srcset="
-                      images/worker1-tab-1x.jpg,
-                      images/worker1-tab-2x.jpg 2x
-                  "
+                media="screen and (max-width: 1200px)"
+                srcset="images/worker1-tab-1x.jpg, images/worker1-tab-2x.jpg 2x"
               />
               <source
-                  srcset="
-                      images/worker1-desk-1x.jpg,
-                      images/worker1-desk-2x.jpg 2x
-                  "
+                srcset="
+                  images/worker1-desk-1x.jpg,
+                  images/worker1-desk-2x.jpg 2x
+                "
               />
 
               <img
-                  class="team__image-img"
-                  src="./images/worker1.jpg"
-                  alt="John Doe Product Designer"
+                class="team__image-img"
+                src="./images/worker1.jpg"
+                alt="John Doe Product Designer"
               />
-          </picture>
+            </picture>
             <h4 class="team__name">John Doe</h4>
             <p class="team__description">Product Designer</p>
             <div class="team__media">
@@ -229,32 +225,25 @@
           <li class="team__box">
             <picture>
               <source
-                  media="screen and (max-width: 768px)"
-                  srcset="
-                      images/worker2-mob-1x.jpg,
-                      images/worker2-mob-2x.jpg 2x
-                  "
+                media="screen and (max-width: 768px)"
+                srcset="images/worker2-mob-1x.jpg, images/worker2-mob-2x.jpg 2x"
               />
               <source
-                  media="screen and (max-width: 1200px)"
-                  srcset="
-                      images/worker2-tab-1x.jpg,
-                      images/worker2-tab-2x.jpg 2x
-                  "
+                media="screen and (max-width: 1200px)"
+                srcset="images/worker2-tab-1x.jpg, images/worker2-tab-2x.jpg 2x"
               />
               <source
-                  srcset="
-                      images/worker2-desk-1x.jpg,
-                      images/worker2-desk-2x.jpg 2x
-                  "
+                srcset="
+                  images/worker2-desk-1x.jpg,
+                  images/worker2-desk-2x.jpg 2x
+                "
               />
-
               <img
-                  class="team__image-img"
-                  src="./images/worker2.jpg"
-                  alt="John Doe Product Designer"
+                class="team__image-img"
+                src="./images/worker2.jpg"
+                alt="John Doe Product Designer"
               />
-          </picture>
+            </picture>
             <h4 class="team__name">John Doe</h4>
             <p class="team__description">Frontend Developer</p>
             <div class="team__media">
@@ -291,32 +280,25 @@
           <li class="team__box">
             <picture>
               <source
-                  media="screen and (max-width: 768px)"
-                  srcset="
-                      images/worker3-mob-1x.jpg,
-                      images/worker3-mob-2x.jpg 2x
-                  "
+                media="screen and (max-width: 768px)"
+                srcset="images/worker3-mob-1x.jpg, images/worker3-mob-2x.jpg 2x"
               />
               <source
-                  media="screen and (max-width: 1200px)"
-                  srcset="
-                      images/worker3-tab-1x.jpg,
-                      images/worker3-tab-2x.jpg 2x
-                  "
+                media="screen and (max-width: 1200px)"
+                srcset="images/worker3-tab-1x.jpg, images/worker3-tab-2x.jpg 2x"
               />
               <source
-                  srcset="
-                      images/worker3-desk-1x.jpg,
-                      images/worker3-desk-2x.jpg 2x
-                  "
+                srcset="
+                  images/worker3-desk-1x.jpg,
+                  images/worker3-desk-2x.jpg 2x
+                "
               />
-
               <img
-                  class="team__image-img"
-                  src="./images/worker3.jpg"
-                  alt="John Doe Product Designer"
+                class="team__image-img"
+                src="./images/worker3.jpg"
+                alt="John Doe Product Designer"
               />
-          </picture>
+            </picture>
             <h4 class="team__name">John Doe</h4>
             <p class="team__description">Marketing</p>
             <div class="team__media">
@@ -353,32 +335,25 @@
           <li class="team__box">
             <picture>
               <source
-                  media="screen and (max-width: 768px)"
-                  srcset="
-                      images/worker4-mob-1x.jpg,
-                      images/worker4-mob-2x.jpg 2x
-                  "
+                media="screen and (max-width: 768px)"
+                srcset="images/worker4-mob-1x.jpg, images/worker4-mob-2x.jpg 2x"
               />
               <source
-                  media="screen and (max-width: 1200px)"
-                  srcset="
-                      images/worker4-tab-1x.jpg,
-                      images/worker4-tab-2x.jpg 2x
-                  "
+                media="screen and (max-width: 1200px)"
+                srcset="images/worker4-tab-1x.jpg, images/worker4-tab-2x.jpg 2x"
               />
               <source
-                  srcset="
-                      images/worker4-desk-1x.jpg,
-                      images/worker4-desk-2x.jpg 2x
-                  "
+                srcset="
+                  images/worker4-desk-1x.jpg,
+                  images/worker4-desk-2x.jpg 2x
+                "
               />
-
               <img
-                  class="team__image-img"
-                  src="./images/worker4.jpg"
-                  alt="John Doe Product Designer"
+                class="team__image-img"
+                src="./images/worker4.jpg"
+                alt="John Doe Product Designer"
               />
-          </picture>
+            </picture>
             <h4 class="team__name">John Doe</h4>
             <p class="team__description">UI Designer</p>
             <div class="team__media">
@@ -537,7 +512,7 @@
               name="email"
               placeholder="E-mail"
             />
-            <button class="signup__btn-submit" type="submit">
+            <button class="signup__btn-submit btn" type="submit">
               Zapisz się
               <svg width="24px" height="24px">
                 <use href="./images/icons.svg#icon-icon-send"></use>
@@ -547,61 +522,66 @@
         </div>
       </div>
     </footer>
-    <div class="mobile__menu js-menu-container" id="mobile-menu">
-      <button class="menu__toggle mobile__menu__close js-close-menu">
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu__toggle menu-container__close js-close-menu">
         <svg
           class="mobile__menu-icon"
-          width="40"
-          height="40"
-          fill="currentColor"
+          width="18.67px"
+          height="18.67px"
+          
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
         >
           <use href="./images/icons.svg#icon-close_24px"></use>
         </svg>
       </button>
-      <div class="menu__container">
-        <ul class="mobile__menu-list">
-          <li class="mobile__menu-item">
-            <a class="mobile__menu-link" href="#">Agencja</a>
-          </li>
-          <li class="mobile__menu-item">
-            <a class="mobile__menu-link" href="#">Portfolio</a>
-          </li>
-          <li class="mobile__menu-item">
-            <a class="mobile__menu-link" href="#">Kontakt</a>
-          </li>
-        </ul>
-      </div>
-      <div class="mobile__menu-contact">
+
+      <ul class="menu-container__list">
+        <li class="menu-container__item">
+          <a class="menu-container__link menu-container--active" href="./index.html">Agencja</a>
+        </li>
+        <li class="menu-container__item">
+          <a class="menu-container__link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="menu-container__item">
+          <a class="menu-container__link" href="#">Kontakt</a>
+        </li>
+      </ul>
+
+      <div class="menu-container__contact">
         <ul>
           <li>
-            <a class="mobile__menu-tel" href="tel:+48111111111"
+            <a class="menu-container__tel" href="tel:+48111111111"
               >+48 111 111 111</a
             >
           </li>
           <li>
-            <a class="mobile__menu-email" href="mailto:info@example.com"
+            <a class="menu-container__email" href="mailto:info@example.com"
               >info@example.com</a
             >
           </li>
         </ul>
-        <ul class="mobile__menu-social">
-          <li class="mobile__menu-social-item">
-            <a class="mobile__menu-social-link" href="#">Instagram</a>
-          </li>
-          <li class="mobile__menu-social-item">
-            <a class="mobile__menu-social-link" href="#">Twitter</a>
-          </li>
-          <li class="mobile__menu-social-item">
-            <a class="mobile__menu-social-link" href="#">Facebook</a>
-          </li>
-          <li class="mobile__menu-social-item">
-            <a class="mobile__menu-social-link" href="#">LinkedIn</a>
-          </li>
-        </ul>
       </div>
+      <ul class="menu-container__social">
+        <li class="menu-container__social-item">
+          <a class="menu-container__social-link"  href="https://www.instagram.com/"
+          target="_blank">Instagram</a>
+        </li>
+        <li class="menu-container__social-item">
+          <a class="menu-container__social-link" href="https://twitter.com/?lang=en-gb"
+          target="_blank">Twitter</a>
+        </li>
+        <li class="menu-container__social-item">
+          <a class="menu-container__social-link" href="https://en-gb.facebook.com/"
+          target="_blank">Facebook</a>
+        </li>
+        <li class="menu-container__social-item">
+          <a class="menu-container__social-link"  href="https://gb.linkedin.com/"
+          target="_blank">LinkedIn</a>
+        </li>
+      </ul>
     </div>
+
     <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
@@ -690,7 +670,7 @@
               >.</span
             >
           </label>
-          <button class="modal__regulation-btn" type="submit">Wyślij</button>
+          <button class="modal__regulation-btn btn" type="submit">Wyślij</button>
         </form>
         <button class="modal__regulation-close" data-modal-close>x</button>
       </div>

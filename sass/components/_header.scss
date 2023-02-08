@@ -8,13 +8,11 @@
   align-items: center;
   text-decoration: none;
   &__part {
-     
     text-decoration: none;
     fill: $greyColor;
     transition-property: fill;
     transition-duration: $defaultTransformDuration;
     transition-timing-function: $transitionTimingFunction;
-  
   }
 
   &__part:hover,
@@ -25,6 +23,7 @@
   &__nav {
     display: none;
     @include tablet {
+      padding-left: 55px;
       display: flex;
       margin: 0;
       gap: 50px;
@@ -78,9 +77,6 @@
     &__item > li:not(:last-child) {
       margin-right: 30px;
     }
-    
-
-   
 
     &--active {
       position: relative;
@@ -100,3 +96,4 @@
     }
   }
 }
+

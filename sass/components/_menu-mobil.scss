@@ -1,66 +1,138 @@
-/*@media screen and (max-width: 768px){
-   .header__link,
-   .header__icon,
-   .header__contact{
-      display: none;
-      
-   }
-   
+@media screen and (max-width: 768px) {
+  .header__link,
+  .header__icon,
+  .header__contact {
+    display: none;
+  }
 }
-.menu__toggle{
-   display: none;
+a {
+  text-decoration: none;
+  list-style: none;
+  color: $secondaryBlackColor;
+}
+.menu__toggle {
+  outline: none;
+  border: none;
+  background: none;
+  position: fixed;
+  padding: 0;
+  top: 16px;
+  right: 16px;
+  color: white;
+
+  @include tablet {
+    display: none;
+  }
 }
 
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
 
-@media screen and(min-width: 768px){
-.mobile__menu{ 
-   display: none;
+  background-color: $whiteColor;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-}
-.menu__toggle{
-   display: block;
-   cursor: pointer;
-   background: transparent;
-   border: 0;
+  transform: translateX(150%);
+  transition: transform 250ms ease-in-out;
 
-}
+  &.is-open {
+    transform: translateX(0);
+  }
+  &.menu__toggle {
+   position: absolute;
+   top: 16px;
+   right: 16px;
+   color: $whiteColor;
+ }
 
-
-
-}*/
-/*
-.mobile__menu{
-   position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-
-    background-color: white;
-    z-index: 999;
+  &__close {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 19.33px;
+    cursor: pointer;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__close:is(:hover, :focus) {
+    fill: $blueColor;
+  }
+  &__list {
+    text-decoration: none;
+    padding-left: 40px;
+    list-style: none;
+    font-weight: 500;
+    font-size: 40;
+    line-height: 1.17;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 32px;
+    padding: 48px 40px 48px 40px;
+  }
+  &__item {
+    color: $secondaryBlackColor;
+  }
+  &--active {
+    color: $blueColor;
+  }
+  &__contact {
+    padding: 48px 40px 48px 40px;
+  }
+  &__tel {
+    display: block;
+    font-size: 34;
+    line-height: 1.17;
+    font-weight: 500;
+    color: $blueColor;
+    padding-bottom: 32px;
+  }
+  &__email {
+    font-size: 24;
+    line-height: 1.16;
+    color: $greyColor;
+    padding-bottom: 64px;
+  }
+  &__social {
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 1.22;
+    color: $blueColor;
+    display: flex;
+    gap: 20px;
+    padding-left: 40px;
+    padding-bottom: 48px;
+    padding: 0 0 48 40px;
+  }
+  &__social :not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
 
-    transform: translateX(150%);
-    transition: transform 250ms ease-in-out;
-
-    &.is-open{
-      transform: translateX(0);
-    }
-    &__close{
-      font-size: 30px;
-      background-color: transparent;
-      outline: none;
-      border: none;
-      position: absolute;
-      top: 20px;
-      right: 19.33px;
-      transition: color 250ms ease-in-out;
-    }
-
+    padding-right: 10px;
+  }
+  &__social-link {
+    color: $blueColor;
+  }
 }
-*/
 
+.mobile__menu-hamburger {
+  color: white;
+  fill: $blackColor;
+  cursor: pointer;
 
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.mobile__menu-hamburger:focus,
+.mobile__menu-hamburger:hover {
+  fill: $blueColor;
+}

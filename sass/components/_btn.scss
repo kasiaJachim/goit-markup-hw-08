@@ -1,0 +1,11 @@
+.btn {
+  transition-property: color, background-color;
+  transition-duration: $defaultTransformDuration;
+  transition-timing-function: $transitionTimingFunction;
+}
+.btn:hover,
+.btn:focus {
+  color: $whiteColor;
+  background-color: $blueColor;
+  cursor: pointer;
+}

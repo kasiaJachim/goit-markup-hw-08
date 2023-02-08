@@ -2,6 +2,7 @@ body {
   font-family: "Roboto" sans-serif;
   color: $greyColor;
 }
+
 a {
   transition-property: color;
   transition-duration: $defaultTransformDuration;
@@ -11,17 +12,7 @@ a:hover,
 a:focus {
   color: $blueColor;
 }
-button {
-  transition-property: color, background-color;
-  transition-duration: $defaultTransformDuration;
-  transition-timing-function: $transitionTimingFunction;
-}
-button:hover,
-button:focus {
-  color: $whiteColor;
-  background-color: $blueColor;
-  cursor: pointer;
-}
+
 ul {
   margin: 0;
   padding: 0;
@@ -40,7 +31,6 @@ p {
 
 .container {
   max-width: 1200px;
-
   padding-top: 84px;
   padding-bottom: 68px;
 }

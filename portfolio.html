@@ -50,24 +50,34 @@
           <a class="header__contact" href="tel:+48111111111">+48 111 111 111</a>
         </li>
       </ul>
+      <button
+          class="menu__toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile__menu-hamburger" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
+      </div>
     </header>
     <main>
       <section>
         <ul class="btn-section">
           <li>
-            <button class="btn-section__btn" type="button">Wszystkie</button>
+            <button class="btn-section__btn btn" type="button">Wszystkie</button>
           </li>
           <li>
-            <button class="btn-section__btn" type="button">Strony</button>
+            <button class="btn-section__btn btn" type="button">Strony</button>
           </li>
           <li>
-            <button class="btn-section__btn" type="button">Aplikacje</button>
+            <button class="btn-section__btn btn" type="button">Aplikacje</button>
           </li>
           <li>
-            <button class="btn-section__btn" type="button">Dizajn</button>
+            <button class="btn-section__btn btn" type="button">Dizajn</button>
           </li>
           <li>
-            <button class="btn-section__btn" type="button">Marketing</button>
+            <button class="btn-section__btn btn" type="button">Marketing</button>
           </li>
         </ul>
       </section>
@@ -361,7 +371,7 @@
               name="email"
               placeholder="E-mail"
             />
-            <button class="signup__btn-submit" type="submit">
+            <button class="signup__btn-submit btn" type="submit">
               Zapisz się
               <svg width="24px" height="24px">
                 <use href="./images/icons.svg#icon-icon-send"></use>
@@ -371,5 +381,73 @@
         </div>
       </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu__toggle menu-container__close js-close-menu">
+        <svg
+          class="mobile__menu-icon"
+          width="18.67px"
+          height="18.67px"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <use href="./images/icons.svg#icon-close_24px"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile__menu-list">
+        <li class="mobile__menu-item">
+          <a class="mobile__menu-link" href="./index.html">Agencja</a>
+        </li>
+        <li class="mobile__menu-item">
+          <a class="mobile__menu-link  menu-container--active" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="mobile__menu-item">
+          <a class="mobile__menu-link" href="#">Kontakt</a>
+        </li>
+      </ul>
+
+      <div class="mobile__menu-contact">
+        <ul>
+          <li>
+            <a class="mobile__menu-tel" href="tel:+48111111111"
+              >+48 111 111 111</a
+            >
+          </li>
+          <li>
+            <a class="mobile__menu-email" href="mailto:info@example.com"
+              >info@example.com</a
+            >
+          </li>
+        </ul>
+      </div>
+      <ul class="mobile__menu-social">
+        <li class="mobile__menu-social-item">
+          <a class="mobile__menu-social-link"  href="https://www.instagram.com/"
+          target="_blank">Instagram</a>
+        </li>
+        <li class="mobile__menu-social-item">
+          <a class="mobile__menu-social-link" href="https://twitter.com/?lang=en-gb"
+          target="_blank">Twitter</a>
+        </li>
+        <li class="mobile__menu-social-item">
+          <a class="mobile__menu-social-link" href="https://en-gb.facebook.com/"
+          target="_blank">Facebook</a>
+        </li>
+        <li class="mobile__menu-social-item">
+          <a class="mobile__menu-social-link"  href="https://gb.linkedin.com/"
+          target="_blank">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
+
   </body>
 </html>

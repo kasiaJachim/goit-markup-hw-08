@@ -13,8 +13,9 @@
       rgba(47, 48, 58, 0.4) 100%
     ),
     url("/goit-markup-hw-08/images/background-mob-x1.jpg");
- 
+
   @include tablet {
+    max-height: 400px;
     background-image: linear-gradient(
         0deg,
         rgba(47, 48, 58, 0.4) 0%,
