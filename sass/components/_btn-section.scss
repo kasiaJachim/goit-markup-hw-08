@@ -1,5 +1,6 @@
 .btn-section {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   padding-top: 78px;
 
@@ -16,6 +17,7 @@
     letter-spacing: 0.03em;
     border: 0;
     padding: 10px;
+    margin-bottom: 8px;
     margin-right: 8px;
   }
 }

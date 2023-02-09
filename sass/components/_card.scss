@@ -1,33 +1,32 @@
 .card {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  &__icon {
-    display: inline-block;
+  gap: 30px;
+ 
+ 
+  &__part {
+    align-items: center;
+    display: flex;
+    justify-content: center;
     border-radius: 4px;
     fill: $secondaryBlackColor;
     background-color: $teamCardColor;
     height: 120px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    width: 450px;
-
-    @include tablet {
-      width: 354px;
-    }
-    @include desktop {
-      width: 270px;
-    }
   }
+    &__item {
+      width: 450px;
 
-  &__item {
-    padding: 10px;
-    flex-basis: calc((100% - 90px) / 4);
-
-    &__item > p:not(:last-child) {
-      margin-right: 30px;
+      @include tablet {
+          width: 354px;
+      }
+      @include desktop {
+          width: 270px;
+      }
     }
-    & > h5 {
+  
+    &__title {
       color: $secondaryBlackColor;
       font-weight: 700;
       font-size: 14;
@@ -41,10 +40,11 @@
         text-align: left;
       }
     }
-    & > p {
+    &__description {
       font-size: 14;
       line-height: 1.71;
       letter-spacing: 0.03em;
+      
     }
   }
-}
+
